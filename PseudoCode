@@ -1,1 +1,15 @@
 
+# List of temperature intervals
+frigid # 0 - 25
+freezing # 25 - 32
+
+# Conditions (T/F)
+
+# SAMPLE
+if winter and sunny and frigid
+
+
+# IF TIME:
+- add seasons
+- celsius and farenheit 
+- location, will tell you the season? Location/season combination?
