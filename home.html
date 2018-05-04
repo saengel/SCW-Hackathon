@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <!--Import Google Icon Font--> <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile--> <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="weather.css" rel="stylesheet">
+    <title>WeatherWare</title>
+  </head>
+  <body>
+
+<div class="container">
+
+      <nav>
+          <div class="nav-wrapper teal lighten-3">
+            <img src="logo.jpg" class="brand-logo">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="home.html">Weather Data</a></li>
+              <li><a href="summer.html">Outfit</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="is-embed">
+    			<iframe src="https://app.initialstate.com/embed/#/tiles/G9TLnZylmJLcyQMfHOLJSf3QabbUOzW6"></iframe>
+    		</div>
+</div>
+
+  <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+      $('.parallax').parallax();
+        });
+        $('#textarea1').val('');
+        $('#textarea1').trigger('autoresize');
+    </script>
+
+  </body>
+</html>
