@@ -7,7 +7,7 @@ from ISStreamer.Streamer import Streamer
 import webbrowser
 
 sense = SenseHat()
-logger = Streamer(bucket_name="Sense Hat Sensor Data1", access_key="m3iuN99DPyDPOJrtWmWd508cAuQ9SOLC")
+logger = Streamer(bucket_name="Sense Hat Sensor Data", access_key="7atqMMXyfwEQRXB83dmGJmVtpn12oKUr")
 sense.clear()
 
 try:
@@ -28,7 +28,7 @@ try:
         
         # Rain factor checked first
         if humidity >= 90 and temp > 32:
-            webbrowser.open_new_tab('rain.html')
+            #webbrowser.open_new_tab('rain.html')
             print("Oh no, it may rain. May sure you have boots and a rain jacket.")
             
         elif humidity >= 90 and temp <= 32:
@@ -37,22 +37,22 @@ try:
 
         # A series of temperature checks at our desired intervals
         if temp <= 25:
-            webbrowser.open_new_tab('winter.html')
+            #webbrowser.open_new_tab('winter.html')
             print("It';s freezing out! Bundle up!")
         elif temp <= 40:
-            webbrowser.open_new_tab('fall.html')
+            #webbrowser.open_new_tab('fall.html')
             print("It's cold. Leggings and boots are a good call right now.")
         elif temp <= 50:
-            webbrowser.open_new_tab('spring.html')
+            #webbrowser.open_new_tab('spring.html')
             print("Haha. No one knows what to wear when it's 50 degrees. Good luck!")
         elif temp <= 60:
-            webbrowser.open_new_tab('spring.html')
+            #webbrowser.open_new_tab('spring.html')
             print("Too warm for a sweatshirt, I think we need T-shirts.")
         elif temp <= 75:
-            webbrowser.open_new_tab('summer.html')
+            #webbrowser.open_new_tab('summer.html')
             print("Time to break out the flowy skirts and stuff")
         else:
-            webbrowser.open_new_tab('summer.html')
+            #webbrowser.open_new_tab('summer.html')
             print("It's so hot! Jump in a pool before doing anything else today.") 
         
         time.sleep(30)
